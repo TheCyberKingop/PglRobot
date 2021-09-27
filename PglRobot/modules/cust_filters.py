@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from PglRobot import dispatcher, LOGGER, DRAGONS
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from PglRobot.modules.helper_funcs.chat_status import user_admin
-from PglRobot.modules.helper_funcs.extraction import extract_text
-from PglRobot.modules.helper_funcs.filters import CustomFilters
-from PglRobot.modules.helper_funcs.misc import build_keyboard_parser
-from PglRobot.modules.helper_funcs.msg_types import get_filter_type
-from PglRobot.modules.helper_funcs.string_handling import (
+from ElectroRobot import dispatcher, LOGGER, DRAGONS
+from ElectroRobot.modules.disable import DisableAbleCommandHandler
+from ElectroRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from ElectroRobot.modules.helper_funcs.chat_status import user_admin
+from ElectroRobot.modules.helper_funcs.extraction import extract_text
+from ElectroRobot.modules.helper_funcs.filters import CustomFilters
+from ElectroRobot.modules.helper_funcs.misc import build_keyboard_parser
+from ElectroRobot.modules.helper_funcs.msg_types import get_filter_type
+from ElectroRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from PglRobot.modules.sql import cust_filters_sql as sql
+from ElectroRobot.modules.sql import cust_filters_sql as sql
 
-from PglRobot.modules.connection import connected
+from ElectroRobot.modules.connection import connected
 
-from PglRobot.modules.helper_funcs.alternate import send_message, typing_action
+from ElectroRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

@@ -1,7 +1,7 @@
 import speedtest
-from PglRobot import DEV_USERS, dispatcher
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.chat_status import dev_plus
+from ElectroRobot import DEV_USERS, dispatcher
+from ElectroRobot.modules.disable import DisableAbleCommandHandler
+from ElectroRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 

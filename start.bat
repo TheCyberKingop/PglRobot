@@ -1,4 +1,4 @@
 @echo off
-TITLE PglRobot
-:: Enables virtual env mode and then starts PglRobot
-env\scripts\activate.bat && py -m PglRobot
+TITLE ElectroRobot
+:: Enables virtual env mode and then starts ElectroRobot
+env\scripts\activate.bat && py -m ElectroRobot

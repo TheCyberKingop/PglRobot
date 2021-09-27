@@ -1,5 +1,5 @@
-from PglRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from PglRobot import DRAGONS
+from ElectroRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from ElectroRobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
@@ -42,13 +42,13 @@ async def is_user_admin(user_id: int, chat_id):
     return status
 
 
-async def PglRobot_is_admin(chat_id: int):
+async def ElectroRobot_is_admin(chat_id: int):
     status = False
-    PglRobot = await telethn.get_me()
+    ElectroRobot = await telethn.get_me()
     async for user in telethn.iter_participants(
         chat_id, filter=ChannelParticipantsAdmins
     ):
-        if PglRobot.id == user.id:
+        if ElectroRobot.id == user.id:
             status = True
             break
     return status

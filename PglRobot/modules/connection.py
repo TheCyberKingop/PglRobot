@@ -5,10 +5,10 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-import PglRobot.modules.sql.connection_sql as sql
-from PglRobot import dispatcher, DRAGONS, DEV_USERS
-from PglRobot.modules.helper_funcs import chat_status
-from PglRobot.modules.helper_funcs.alternate import send_message, typing_action
+import ElectroRobot.modules.sql.connection_sql as sql
+from ElectroRobot import dispatcher, DRAGONS, DEV_USERS
+from ElectroRobot.modules.helper_funcs import chat_status
+from ElectroRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 

@@ -2,11 +2,11 @@ import html
 import random
 import time
 
-import PglRobot.modules.fun_strings as fun_strings
-from PglRobot import dispatcher
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.chat_status import is_user_admin
-from PglRobot.modules.helper_funcs.extraction import extract_user
+import ElectroRobot.modules.fun_strings as fun_strings
+from ElectroRobot import dispatcher
+from ElectroRobot.modules.disable import DisableAbleCommandHandler
+from ElectroRobot.modules.helper_funcs.chat_status import is_user_admin
+from ElectroRobot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
@@ -67,7 +67,7 @@ def slap(update: Update, context: CallbackContext):
     user_id = extract_user(message, args)
 
     if user_id == bot.id:
-        temp = random.choice(fun_strings.SLAP_PglRobot_TEMPLATES)
+        temp = random.choice(fun_strings.SLAP_ElectroRobot_TEMPLATES)
 
         if isinstance(temp, list):
             if temp[2] == "tmute":

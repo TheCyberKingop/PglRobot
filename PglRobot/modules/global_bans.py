@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import PglRobot.modules.sql.global_bans_sql as sql
-from PglRobot.modules.sql.users_sql import get_user_com_chats
-from PglRobot import (
+import ElectroRobot.modules.sql.global_bans_sql as sql
+from ElectroRobot.modules.sql.users_sql import get_user_com_chats
+from ElectroRobot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from PglRobot import (
     sw,
     dispatcher,
 )
-from PglRobot.modules.helper_funcs.chat_status import (
+from ElectroRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from PglRobot.modules.helper_funcs.extraction import (
+from ElectroRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from PglRobot.modules.helper_funcs.misc import send_to_list
+from ElectroRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 

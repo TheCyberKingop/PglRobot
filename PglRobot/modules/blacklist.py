@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import PglRobot.modules.sql.blacklist_sql as sql
-from PglRobot import dispatcher, LOGGER
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from PglRobot.modules.helper_funcs.extraction import extract_text
-from PglRobot.modules.helper_funcs.misc import split_message
-from PglRobot.modules.log_channel import loggable
-from PglRobot.modules.warns import warn
-from PglRobot.modules.helper_funcs.string_handling import extract_time
-from PglRobot.modules.connection import connected
-from PglRobot.modules.sql.approve_sql import is_approved
-from PglRobot.modules.helper_funcs.alternate import send_message, typing_action
+import ElectroRobot.modules.sql.blacklist_sql as sql
+from ElectroRobot import dispatcher, LOGGER
+from ElectroRobot.modules.disable import DisableAbleCommandHandler
+from ElectroRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from ElectroRobot.modules.helper_funcs.extraction import extract_text
+from ElectroRobot.modules.helper_funcs.misc import split_message
+from ElectroRobot.modules.log_channel import loggable
+from ElectroRobot.modules.warns import warn
+from ElectroRobot.modules.helper_funcs.string_handling import extract_time
+from ElectroRobot.modules.connection import connected
+from ElectroRobot.modules.sql.approve_sql import is_approved
+from ElectroRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 

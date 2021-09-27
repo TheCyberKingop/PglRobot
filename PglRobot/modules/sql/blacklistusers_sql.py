@@ -1,6 +1,6 @@
 import threading
 
-from PglRobot.modules.sql import BASE, SESSION
+from ElectroRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText
 
 

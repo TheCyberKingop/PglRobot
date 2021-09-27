@@ -1,8 +1,8 @@
 import math
 
 import pynewtonmath as newton
-from PglRobot import dispatcher
-from PglRobot.modules.disable import DisableAbleCommandHandler
+from ElectroRobot import dispatcher
+from ElectroRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
