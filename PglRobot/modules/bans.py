@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from PglRobot import (
+from ElctroRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -15,8 +15,8 @@ from PglRobot import (
     WOLVES,
     dispatcher,
 )
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.chat_status import (
+from ElctroRobot.modules.disable import DisableAbleCommandHandler
+from ElctroRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,9 +27,9 @@ from PglRobot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from PglRobot.modules.helper_funcs.extraction import extract_user_and_text
-from PglRobot.modules.helper_funcs.string_handling import extract_time
-from PglRobot.modules.log_channel import gloggable, loggable
+from ElctroRobot.modules.helper_funcs.extraction import extract_user_and_text
+from ElctroRobot.modules.helper_funcs.string_handling import extract_time
+from ElctroRobot.modules.log_channel import gloggable, loggable
 
 
 @run_async

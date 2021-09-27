@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from PglRobot.modules.helper_funcs.msg_types import Types
-from PglRobot.modules.sql import BASE, SESSION
+from ElctroRobot.modules.helper_funcs.msg_types import Types
+from ElctroRobot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):

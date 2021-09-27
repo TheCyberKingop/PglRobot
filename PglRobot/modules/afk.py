@@ -1,12 +1,12 @@
 import random, html
 
-from PglRobot import dispatcher
-from PglRobot.modules.disable import (
+from ElctroRobot import dispatcher
+from ElctroRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from PglRobot.modules.sql import afk_sql as sql
-from PglRobot.modules.users import get_user_id
+from ElctroRobot.modules.sql import afk_sql as sql
+from ElctroRobot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async

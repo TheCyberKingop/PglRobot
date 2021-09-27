@@ -1,9 +1,9 @@
 from time import sleep
 
-import PglRobot.modules.sql.global_bans_sql as gban_sql
-import PglRobot.modules.sql.users_sql as user_sql
-from PglRobot import DEV_USERS, OWNER_ID, dispatcher
-from PglRobot.modules.helper_funcs.chat_status import dev_plus
+import ElctroRobot.modules.sql.global_bans_sql as gban_sql
+import ElctroRobot.modules.sql.users_sql as user_sql
+from ElctroRobot import DEV_USERS, OWNER_ID, dispatcher
+from ElctroRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

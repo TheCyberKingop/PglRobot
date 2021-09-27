@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import PglRobot.modules.sql.locks_sql as sql
-from PglRobot import dispatcher, DRAGONS, LOGGER
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.chat_status import (
+import ElctroRobot.modules.sql.locks_sql as sql
+from ElctroRobot import dispatcher, DRAGONS, LOGGER
+from ElctroRobot.modules.disable import DisableAbleCommandHandler
+from ElctroRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from PglRobot.modules.log_channel import loggable
-from PglRobot.modules.connection import connected
-from PglRobot.modules.sql.approve_sql import is_approved
-from PglRobot.modules.helper_funcs.alternate import send_message, typing_action
+from ElctroRobot.modules.log_channel import loggable
+from ElctroRobot.modules.connection import connected
+from ElctroRobot.modules.sql.approve_sql import is_approved
+from ElctroRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 

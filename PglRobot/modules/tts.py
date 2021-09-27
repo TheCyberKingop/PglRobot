@@ -12,10 +12,10 @@ from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
-from PglRobot import dispatcher
-from PglRobot.__main__ import STATS
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.extraction import extract_user
+from ElctroRobot import dispatcher
+from ElctroRobot.__main__ import STATS
+from ElctroRobot.modules.disable import DisableAbleCommandHandler
+from ElctroRobot.modules.helper_funcs.extraction import extract_user
 
 
 def tts(update, context):

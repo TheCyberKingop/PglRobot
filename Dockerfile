@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/PglRobot
-RUN git clone -b shiken https://github.com/iisgaurav/PglRobot /root/PglRobot
-WORKDIR /root/PglRobot
+# Copy Python Requirements to /root/ElctroRobot
+RUN git clone -b shiken https://github.com/iisgaurav/ElctroRobot /root/ElctroRobot
+WORKDIR /root/ElctroRobot
 
-#Copy config file to /root/PglRobot/PglRobot
-COPY ./PglRobot/sample_config.py ./PglRobot/config.py* /root/PglRobot/PglRobot/
+#Copy config file to /root/ElctroRobot/ElctroRobot
+COPY ./ElctroRobot/sample_config.py ./ElctroRobot/config.py* /root/ElctroRobot/ElctroRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","PglRobot"]
+CMD ["python3","-m","ElctroRobot"]

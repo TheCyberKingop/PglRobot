@@ -12,8 +12,8 @@ from base64 import b64decode
 from pySmartDL import SmartDL
 from telethon.tl.types import DocumentAttributeVideo, DocumentAttributeAudio
 from telethon import events
-from PglRobot.pgl import PglRobot
-from PglRobot.utils import progress
+from ElctroRobot.pgl import ElctroRobot
+from ElctroRobot.utils import progress
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from validators.url import url
@@ -45,7 +45,7 @@ except:
     pass
 
 
-@PglRobot(pattern="^/song (.*)")
+@ElctroRobot(pattern="^/song (.*)")
 async def download_video(v_url):
 
     lazy = v_url
@@ -165,7 +165,7 @@ async def download_video(v_url):
         os.remove(f"{rip_data['id']}.mp4")
 
 
-@PglRobot(pattern="^/video (.*)")
+@ElctroRobot(pattern="^/video (.*)")
 async def download_video(v_url):
     lazy = v_url
     sender = await lazy.get_sender()

@@ -1,7 +1,7 @@
 from telegram import ParseMode
 
-from PglRobot import dispatcher
-from PglRobot.modules.disable import DisableAbleCommandHandler
+from ElctroRobot import dispatcher
+from ElctroRobot.modules.disable import DisableAbleCommandHandler
 
 normiefont = [
     "a",

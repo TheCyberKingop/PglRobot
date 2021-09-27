@@ -1,7 +1,7 @@
 import threading
 
-from PglRobot import dispatcher
-from PglRobot.modules.sql import BASE, SESSION
+from ElctroRobot import dispatcher
+from ElctroRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 

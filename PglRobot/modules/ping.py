@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from PglRobot import StartTime, dispatcher
-from PglRobot.modules.helper_funcs.chat_status import sudo_plus
-from PglRobot.modules.disable import DisableAbleCommandHandler
+from ElctroRobot import StartTime, dispatcher
+from ElctroRobot.modules.helper_funcs.chat_status import sudo_plus
+from ElctroRobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
